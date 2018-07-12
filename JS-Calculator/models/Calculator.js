@@ -19,12 +19,9 @@ function Calculator(leftOperand, operator, rightOperand){
             case "/":
                 result = this.leftOperand / this.rightOperand;
                 break;
-            case "%":
-                result = this.leftOperand % this.rightOperand;
-                break;
         }
         return result;
-    }
+    };
 
     this.alertIfNan = function (){
         return "Enter a number please";
