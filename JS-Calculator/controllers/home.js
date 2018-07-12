@@ -15,7 +15,8 @@ module.exports = {
 
         if(isNaN(calculator.leftOperand) || isNaN(calculator.rightOperand)){
             let error = calculator.alertIfNan();
-            res.render('home/index', {'calculator': calculator, 'errorForNumber': error})
+            res.render('home/index', {'calculator': calculator, 'errorForNumber': error});
+            return;
         }
 
         let result = calculator.calculateResult();
